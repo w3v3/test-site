@@ -27,3 +27,8 @@ p, li {
     letter-spacing: 1px;
     color: white;
 }
+
+img {
+    display: block;
+    margin: 0 auto; 
+}
