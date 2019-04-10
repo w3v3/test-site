@@ -1,6 +1,10 @@
-var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
-alert ('this is some javaScript!');
-document.querySelector('html').onclick = function() {
-    alert ('cant touch this!');
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if (mySrc === 'images/download.jpeg') {
+        myImage.setAttribute ('src','images/download02.jpeg');
+    } else {
+        myImage.setAttribute ('src','images/download.jpeg');
+    }
 }
